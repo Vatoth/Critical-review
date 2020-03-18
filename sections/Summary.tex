@@ -2,11 +2,13 @@
 
 \subsection{motivation}
 When a piece of code is really hot, the profiler will request an optimized compilation. This will create another, even faster version of this code which will also be stored.
+The idea of Tracing is after identify the hot code, the hot code will be compiled 
 \subsection{contribution}
 The contributions of this paper are:
 • Applying a tracing JIT compiler to an interpreter.
 • Finding techniques for improving the generated code.
 \subsection{methodology and/or argument}
+\cite{bolz2009tracing} make some experiment to test their theory for performance gain about tracing and optimize hot code for the pypy interpreter, they have runned the small examples about the a square function
 \subsection{conclusion}
-
-\cite{bolz2009tracing}
+THey have seen thanks to the resut that the tracing and optimisation of code works well but that their is some downside,
+which can be the overhead of using two interperters for the same program.
